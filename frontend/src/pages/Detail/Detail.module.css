@@ -1,0 +1,135 @@
+.job-detail {
+  max-width: 689px;
+  margin: auto;
+  color: rgb(var(--secondary2));
+}
+
+.job-detail h2 {
+  font-size: 28px;
+}
+
+.company-overview {
+  display: flex;
+  background-color: rgb(var(--primary));
+  border-radius: 6px;
+}
+
+.company-logo {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-logo img {
+  width: 60%;
+}
+
+.company-desc {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 2.6875em;
+}
+
+.company-desc h2 {
+  font-size: 1.5rem;
+  padding-bottom: 13px;
+}
+
+.job-desc {
+  background: rgb(var(--primary));
+  margin-top: 2rem;
+  padding: 48px;
+  border-radius: 6px;
+}
+
+.job-desc h3 {
+  font-size: 1.25rem;
+  margin-top: 3rem;
+  margin-bottom: 1.75rem;
+}
+
+.job-desc ol li,
+.job-desc ul li {
+  margin-bottom: 8px;
+  padding-left: 20px;
+}
+
+.job-desc li::marker {
+  color: rgb(var(--accent));
+  font-weight: bold;
+}
+
+.job-desc ol,
+.job-desc ul {
+  margin-top: 1.5rem;
+  padding-left: 24px;
+}
+
+.description {
+  margin-top: 2.75rem;
+}
+
+.location {
+  color: rgb(var(--accent));
+  font-weight: bold;
+}
+
+.position {
+  margin: 11px 0px 14px 0px;
+}
+
+.job-overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 680px) {
+  .job-detail h2 {
+    font-size: 20px;
+  }
+  .company-overview {
+    display: block;
+    position: relative;
+    padding: 32px;
+  }
+
+  .company-logo {
+    position: absolute;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    top: -25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
+
+  .company-desc {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .company-desc p {
+    margin-bottom: 27px;
+  }
+
+  .job-overview {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .job-overview a {
+    margin-top: 54px;
+  }
+
+  .job-desc {
+    padding: 24px;
+  }
+}

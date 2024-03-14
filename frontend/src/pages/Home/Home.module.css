@@ -1,0 +1,19 @@
+.job-search {
+  margin: auto;
+  max-width: 1110px;
+}
+
+.jobs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  row-gap: 65px;
+  column-gap: 30px;
+  margin-top: 105px;
+  margin-bottom: 56px;
+}
+
+.load-more {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 104px;
+}

@@ -1,0 +1,30 @@
+.theme-switch {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.switch {
+  width: 48px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: rgb(var(--primary));
+  margin: 0px 15px;
+  position: relative;
+}
+
+.switch::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  background-color: rgb(var(--accent));
+  transition: left 200ms;
+}
+
+.switch.clicked::after {
+  left: 28.5px;
+}

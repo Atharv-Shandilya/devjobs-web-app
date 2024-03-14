@@ -1,0 +1,42 @@
+.job-card {
+  color: rgb(var(--secondary2));
+  font-size: 16px;
+  padding: 49px 2rem 2rem 2rem;
+  background-color: rgb(var(--primary));
+  border-radius: 6px;
+  position: relative;
+  cursor: pointer;
+}
+
+.job-card:hover .job-title {
+  color: rbg(var(--secondary2));
+}
+
+.job-title {
+  font-size: 20px;
+  margin: 1rem 0px;
+}
+
+.location {
+  color: rgb(var(--accent));
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 44px;
+}
+
+.company-logo {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+/* .company-logo img {
+  width: 50px;
+  height: 50px;
+} */
