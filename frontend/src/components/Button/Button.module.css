@@ -7,6 +7,10 @@
   cursor: pointer;
 }
 
+.button.short {
+  padding: 1rem 0.5rem;
+}
+
 .button.dark {
   color: white;
   background-color: rgb(var(--accent));
@@ -27,7 +31,7 @@
   background-color: rgba(var(--accent2), 0.3);
 }
 
-@media (max-width: 680px) {
+@media (max-width: 940px) {
   .button.dark.extend {
     display: block;
     width: 100%;
